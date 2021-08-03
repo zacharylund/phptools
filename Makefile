@@ -17,3 +17,6 @@ links:
 	ln -sf ../phpstan/bin/phpstan bin/phpstan
 	ln -sf ../phpunit/bin/phpunit bin/phpunit
 	ln -sf ../psalm/bin/psalm bin/psalm
+
+clean:
+	rm -Rf bin */bin */composer.lock */vendor
