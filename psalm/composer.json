@@ -1,0 +1,12 @@
+{
+    "require": {
+        "phpunit/phpunit": "^8",
+        "psalm/plugin-symfony": "^2.2",
+        "vimeo/psalm": "^4.7",
+        "weirdan/doctrine-psalm-plugin": "^1.0"
+    },
+    "config": {
+        "bin-dir": "bin",
+        "sort-packages": true
+    }
+}
