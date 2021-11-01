@@ -6,6 +6,7 @@ composer:
 
 update:
 	./bin/composer self-update
+	./bin/composer --working-dir=php_codesniffer update
 	./bin/composer --working-dir=phpstan update
 	./bin/composer --working-dir=phpstan-strict update
 	./bin/composer --working-dir=phpunit update
