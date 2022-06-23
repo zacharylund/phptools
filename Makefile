@@ -19,5 +19,13 @@ links:
 	ln -sf ../phpunit/bin/phpunit bin/phpunit
 	ln -sf ../psalm/bin/psalm bin/psalm
 
+outdated:
+	./bin/composer --working-dir=php_codesniffer outdated --direct
+	./bin/composer --working-dir=phpstan outdated --direct
+	./bin/composer --working-dir=phpstan-strict outdated --direct
+	./bin/composer --working-dir=phpunit outdated --direct
+	./bin/composer --working-dir=psalm outdated --direct
+	./bin/composer --working-dir=tools outdated --direct
+
 clean:
 	rm -Rf bin */bin */composer.lock */vendor
