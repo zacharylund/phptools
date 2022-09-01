@@ -7,7 +7,7 @@
         "phpstan/phpstan-phpunit": "^1.1",
         "phpstan/phpstan-strict-rules": "^1.1",
         "phpstan/phpstan-symfony": "^1.0",
-        "phpunit/phpunit": "^8"
+        "phpunit/phpunit": "^9.5"
     },
     "config": {
         "sort-packages": true,
