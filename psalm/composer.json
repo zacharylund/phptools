@@ -1,8 +1,8 @@
 {
     "require": {
         "phpunit/phpunit": "^9.5",
-        "psalm/plugin-symfony": "^3.0",
-        "vimeo/psalm": "^4.12",
+        "psalm/plugin-symfony": "^5.0",
+        "vimeo/psalm": "^5.0",
         "weirdan/doctrine-psalm-plugin": "^2.0"
     },
     "config": {
