@@ -1,4 +1,4 @@
-all: composer update links
+all: composer update links completion
 
 composer:
 	test -d bin || mkdir bin
@@ -19,6 +19,12 @@ links:
 	ln -sf ../phpunit/bin/phpunit bin/phpunit
 	ln -sf ../psalm/bin/psalm bin/psalm
 
+completion:
+	test -d bash_completion.d || mkdir bash_completion.d
+	./bin/composer completion bash > bash_completion.d/composer.sh
+	./bin/phpstan completion bash > bash_completion.d/phpstan.sh
+	./bin/phpstan-strict completion bash > bash_completion.d/phpstan-strict.sh
+
 outdated:
 	./bin/composer --working-dir=php_codesniffer outdated --direct
 	./bin/composer --working-dir=phpstan outdated --direct
@@ -28,4 +34,4 @@ outdated:
 	./bin/composer --working-dir=tools outdated --direct
 
 clean:
-	rm -Rf bin */bin */composer.lock */vendor
+	rm -Rf bash_completion.d bin */bin */composer.lock */vendor
