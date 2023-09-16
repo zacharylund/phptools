@@ -11,6 +11,7 @@ update:
 	./bin/composer --working-dir=phpstan-strict update
 	./bin/composer --working-dir=phpunit update
 	./bin/composer --working-dir=psalm update
+	./bin/composer --working-dir=rector update
 	./bin/composer --working-dir=tools update
 
 links:
@@ -18,6 +19,7 @@ links:
 	ln -sf ../phpstan/bin/phpstan bin/phpstan
 	ln -sf ../phpunit/bin/phpunit bin/phpunit
 	ln -sf ../psalm/bin/psalm bin/psalm
+	ln -sf ../rector/bin/rector bin/rector
 
 completion:
 	test -d bash_completion.d || mkdir bash_completion.d
@@ -31,6 +33,7 @@ outdated:
 	./bin/composer --working-dir=phpstan-strict outdated --direct
 	./bin/composer --working-dir=phpunit outdated --direct
 	./bin/composer --working-dir=psalm outdated --direct
+	./bin/composer --working-dir=rector outdated --direct
 	./bin/composer --working-dir=tools outdated --direct
 
 clean:
