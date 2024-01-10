@@ -1,0 +1,9 @@
+{
+    "require": {
+        "phpmd/phpmd": "^2.13"
+    },
+    "config": {
+        "bin-dir": "bin",
+        "sort-packages": true
+    }
+}
