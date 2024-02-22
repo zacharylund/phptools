@@ -1,6 +1,6 @@
 {
     "require": {
-        "rector/rector": "^0.18.0"
+        "rector/rector": "^1.0"
     },
     "config": {
         "bin-dir": "bin",
