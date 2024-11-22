@@ -10,7 +10,6 @@ update:
 	./bin/composer --working-dir=phpmd update
 	./bin/composer --working-dir=phpstan update
 	./bin/composer --working-dir=phpstan-strict update
-	./bin/composer --working-dir=phpunit update
 	./bin/composer --working-dir=psalm update
 	./bin/composer --working-dir=rector update
 	./bin/composer --working-dir=tools update
@@ -19,7 +18,6 @@ links:
 	ln -sf ../phpmd/bin/phpmd bin/phpmd
 	ln -sf ../phpstan-strict/bin/phpstan bin/phpstan-strict
 	ln -sf ../phpstan/bin/phpstan bin/phpstan
-	ln -sf ../phpunit/bin/phpunit bin/phpunit
 	ln -sf ../psalm/bin/psalm bin/psalm
 	ln -sf ../rector/bin/rector bin/rector
 
@@ -34,7 +32,6 @@ outdated:
 	./bin/composer --working-dir=phpmd outdated --direct
 	./bin/composer --working-dir=phpstan outdated --direct
 	./bin/composer --working-dir=phpstan-strict outdated --direct
-	./bin/composer --working-dir=phpunit outdated --direct
 	./bin/composer --working-dir=psalm outdated --direct
 	./bin/composer --working-dir=rector outdated --direct
 	./bin/composer --working-dir=tools outdated --direct
